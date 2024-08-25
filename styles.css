@@ -1,0 +1,50 @@
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M720 679.36C831.11 683.58 950.86 668.04 1027.43 587.43 1102.77 508.11 1105.32 389.24 1099.3 280 1093.69 178.2 1065.13 78.99 995.3 4.7 923.22-71.97 825.16-119.81 720-123.34 611.27-126.98 503.49-90.36 425.56-14.44 346.68 62.4 304.11 169.87 305.91 280 307.68 388.43 356.95 489.75 434.98 565.02 511.58 638.9 613.65 675.35 720 679.36' fill='%231c538e'%3e%3c/path%3e%3cpath d='M720 538.41C791.9 541.14 869.38 531.09 918.92 478.92 967.68 427.6 969.33 350.69 965.43 280 961.8 214.13 943.32 149.94 898.13 101.87 851.49 52.26 788.05 21.3 720 19.01 649.64 16.66 579.9 40.35 529.48 89.48 478.44 139.2 450.9 208.74 452.06 280 453.21 350.16 485.08 415.72 535.57 464.43 585.14 512.23 651.18 535.82 720 538.41' fill='%232774c6'%3e%3c/path%3e%3cpath d='M720 397.46C752.68 398.7 787.9 394.13 810.42 370.42 832.58 347.09 833.33 312.13 831.56 280 829.91 250.06 821.51 220.88 800.97 199.03 779.77 176.48 750.93 162.41 720 161.37 688.02 160.3 656.32 171.07 633.4 193.4 610.2 216 597.68 247.61 598.21 280 598.73 311.89 613.22 341.69 636.17 363.83 658.7 385.56 688.72 396.28 720 397.46' fill='%23488fdb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    text-align: center;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* background-color: #fff; */
+    /* border: 1px solid #000; */
+    overflow: hidden;
+    margin-top: 20px;
+}
+#bird {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background-image: url('bird.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    background-color: green;
+    bottom: 0;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
